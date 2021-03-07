@@ -1,0 +1,212 @@
+.react-autosuggest__container {
+  // max-width: 300px; SECTION
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.react-autosuggest__container--open {
+  width: 0;
+}
+
+.react-autosuggest__input {
+  border: none;
+  min-width: 80px;
+  width: 100%;
+
+  z-index: 0;
+
+  text-transform: capitalize;
+  color: blue;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.react-autosuggest__input::placeholder {
+  font-weight: 400;
+
+  font-size: 18px;
+  color: lightgray;
+}
+
+.react-autosuggest__input--open {
+  min-width: 150px;
+  z-index: 10;
+}
+/*
+.react-autosuggest__input--focused {
+}
+*/
+.react-autosuggest__suggestions-container {
+  background-color: wheat;
+  color: white;
+}
+.react-autosuggest__suggestions-container--open {
+  background-color: purple;
+  color: white;
+}
+
+.react-autosuggest__suggestions-list {
+  margin-top: 60px;
+  max-height: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  width: 310px;
+  background-color: white;
+  border-radius: 3px;
+  margin-left: -25px;
+  list-style: none;
+  z-index: 100;
+  overflow-x: hidden;
+  padding-left: 0px;
+  box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.suggestion {
+  background: url("../images/cityscape.svg") no-repeat;
+
+  margin-left: -20px;
+}
+.suggestion span {
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+
+.react-autosuggest__suggestion {
+  background-color: white;
+  height: 60px;
+  width: 305px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #1a173b;
+  font-size: 18px;
+  font-weight: 400;
+  z-index: 100;
+}
+.react-autosuggest__suggestion--first {
+  background-color: white;
+}
+.react-autosuggest__suggestion--highlighted {
+  background-color: #afeeee;
+  cursor: pointer;
+}
+
+.react-autosuggest__suggestion--highlighted:hover {
+  width: 310px;
+}
+.react-autosuggest__section-container {
+  background-color: lightgray;
+}
+.react-autosuggest__section-container--first {
+  background-color: orange;
+}
+.react-autosuggest__section-title {
+  background-color: brown;
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+    margin-top: 10px;
+    font-size: small;
+    margin-bottom: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    font-size: 10px;
+  }
+}
+
+.run-animation {
+  animation: transition 0.1s ease;
+
+  margin-top: -5px;
+  font-weight: 300;
+  font-size: 10px;
+  color: black;
+  z-index: 100;
+  position: relative;
+  letter-spacing: 0.6px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.left-section-false {
+  width: 94.4%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  box-sizing: border-box;
+
+  border-radius: 1px 0 0 1px;
+  border-left: 2px solid red;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  cursor: pointer;
+  .origin-input {
+    margin-top: 41px;
+    margin-left: 23px;
+  }
+}
+
+.separator-false {
+  // ujub
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 0px;
+  margin-left: 0px;
+
+  .rectangle {
+    margin-left: -1px;
+    width: 2px;
+    height: 40px;
+    background-color: red;
+  }
+
+  .switch-origin-destination {
+    z-index: 100;
+
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border: solid 1px lightgray;
+
+    width: 30px;
+    height: 30px;
+
+    background: url("../images/arrows.svg") no-repeat;
+    background-position: 50% 50%;
+    margin-left: -15px;
+
+    cursor: pointer;
+  }
+}
+
+.destination-section-false {
+  width: 96%;
+  max-width: 210px;
+  height: 100%;
+  padding-top: 10px;
+  background-color: white;
+  border-right: 1px solid lightgrey;
+  cursor: pointer;
+  margin-left: -14px;
+
+  box-sizing: border-box;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+
+  .destination-input {
+    margin-top: 31px;
+    margin-left: 35px;
+  }
+}

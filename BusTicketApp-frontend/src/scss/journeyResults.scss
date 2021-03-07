@@ -1,0 +1,446 @@
+.results-banner {
+  display: none;
+}
+
+.results-banner-active {
+  display: block;
+}
+
+.journey {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  padding-top: 22px;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.journey:hover {
+  background-color: #fafafa;
+}
+
+.journey:visited {
+  background-color: #fafafa;
+}
+
+.journey-left-section {
+  width: 35%;
+  height: 100%;
+  // background-color: blue;
+  float: left;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.journey-searchbar {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.journey-stop-section {
+  width: 45%;
+}
+
+.journey-stop-direct {
+  color: limegreen !important;
+  width: 120px;
+  border-radius: 4px;
+  height: 50px;
+  background-color: rgba(139, 241, 37, 0.342) !important;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  // margin-top: 20px;
+}
+
+.journey-duration-section {
+  display: flex;
+  flex-direction: column;
+  // background-color: wheat;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.journey-time {
+  // margin-top: 18px;
+  color: blue;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.journey-duration {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.journey-location {
+  width: auto;
+  text-transform: capitalize;
+  color: blue;
+  font-size: 20px;
+  font-weight: 600;
+
+  // margin-top: 18px;
+}
+
+.journey-price-section {
+  float: right;
+  margin-right: 0px;
+  margin: 0 0 0 auto;
+}
+
+.price-chevron {
+  margin-right: 40px;
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin-top: 10px;
+
+  background: url("../images/down-arrow.svg");
+  transition: transform 150ms ease;
+}
+
+.price-chevron-active {
+  margin-right: 40px;
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin-top: 10px;
+  background: url("../images/down-arrow.svg");
+  transform: rotate(180deg);
+  transition: transform 150ms ease;
+}
+
+.price-header {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.price-container {
+  float: right;
+  color: blue;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.ticket-container {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: lightgrey;
+}
+
+.schedule-container {
+  width: 55%;
+  height: 80%;
+  padding: 20px 20px 20px 40px;
+  // background-color: lightpink;
+
+  h3 {
+    color: blue;
+  }
+}
+
+.ticket-select {
+  width: 45%;
+  height: 80%;
+  // background-color: lightskyblue;
+  padding: 40px 40px 20px 20px;
+
+  h3 {
+    color: blue;
+    margin-bottom: 30px;
+  }
+}
+
+.journey-legs {
+  padding-top: 20px;
+}
+
+.journey-leg-start {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.date-time {
+  height: auto;
+  width: auto;
+}
+
+.date {
+  color: lightgrey;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.stop-indicator {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0px 20px 0px 20px;
+}
+
+.stop-marker {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px/50px;
+  border: solid 3px limegreen;
+}
+
+.stop-seperator {
+  width: 2px;
+  height: 150px;
+  background-color: lightgray;
+  margin: 0 auto;
+}
+
+.journey-leg-end {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+
+  .stop-marker {
+    border-color: blue;
+  }
+}
+
+.ticket {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.ticket:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.ticket-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.ticket-info-container {
+  font-size: 12px;
+  margin-top: 10px;
+  width: 50%;
+  height: 20px;
+
+  // margin-right: 10px;
+}
+
+.ticket-info-checkmark {
+  width: 15px;
+  height: 15px;
+  background: url("../images/check.svg") no-repeat;
+  background-position: center;
+  background-size: 80%;
+  // position: absolute;
+  // margin-top: -14px;
+  // margin-left: 5px;
+  float: right;
+  margin-right: 10px;
+}
+
+.ticket-marker {
+  height: 16px;
+  width: 16px;
+  border-radius: 100%;
+  border: solid 1px blue;
+  margin-right: 15px;
+  z-index: 1;
+}
+
+.ticket-marker-filling {
+  height: 8px;
+  width: 8px;
+  border-radius: 10px;
+  background-color: blue !important;
+  margin: 0 auto;
+  margin-top: 3px;
+  z-index: 2;
+}
+
+.ticket-type {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.ticket-price {
+  margin: 0 0 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ticket-info-icon {
+  width: 20px;
+  height: 20px;
+  // background-color: blue;
+  background-image: url("../images/info-blue.svg");
+  margin-left: 10px;
+}
+
+.ticket-info-panel {
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: -110px;
+  box-shadow: 5px 12px 12px 0 rgba(0, 0, 0, 0.1);
+  // margin-top: -50px;
+  // display: none;
+  // animation: panel-pop-reverse 1s ease;
+  animation: panel-pop 0.5s ease;
+}
+
+// .ticket-info-icon:hover {
+//   .ticket-info-panel {
+//     animation: panel-pop 1s;
+//     display: block;
+//     margin-top: -120px;
+//   }
+// }
+
+@keyframes panel-pop-reverse {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    margin-top: -30px;
+    display: none;
+  }
+}
+@keyframes panel-pop {
+  from {
+    margin-top: -80px;
+
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.info-panel-info {
+  width: 75%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 15px;
+  // background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-info {
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid lightgray;
+}
+
+.passenger-info {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.info-panel-triangle {
+  clip-path: polygon(100% 0, 0 0, 0 88%);
+
+  background-color: white;
+
+  height: 40px;
+  width: 40px;
+  transform: scale(1, -1) rotate(42deg);
+  margin-top: -25px;
+  margin-left: 101px;
+}
+
+.confirmation-button {
+  width: 93%;
+  background-color: blue;
+  height: 50px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.confirmation-button:hover {
+  background-color: rgb(32, 32, 206);
+}
+
+@media screen and (max-width: 1250px) {
+  .journey-calendar-date {
+    line-break: strict;
+    line-height: 20px;
+    padding-top: 27px;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .journey-calendar-date-wide {
+    line-height: 20px;
+    padding-top: 27px;
+  }
+
+  .tomorrow-date-banner {
+    // position: absolute;
+    margin-top: -42px;
+    // margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .date-banner {
+    // position: absolute;
+    margin-top: -42px;
+    //margin-left: 27px;
+    margin-bottom: 15px;
+  }
+}

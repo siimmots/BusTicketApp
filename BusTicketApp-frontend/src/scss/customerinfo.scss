@@ -1,0 +1,339 @@
+.journey-step-active-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 20px;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  .marker {
+    border-color: blue;
+    border-width: 10px;
+  }
+}
+
+.info-page-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  // padding: 20px;
+  position: relative;
+}
+
+.info-header {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: -50px;
+}
+
+.customer-info-container {
+  width: inherit;
+  margin: 0 auto;
+  height: auto; // auto
+  // min-height: 400px;
+  background-color: white;
+  box-shadow: 0 22px 34px 0 rgba(0, 16, 34, 0.1);
+  margin-bottom: 20px;
+}
+
+.customer-info-header {
+  height: 80px;
+  box-sizing: border-box;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  cursor: pointer;
+
+  ._text {
+    width: 800px;
+    height: 30px;
+    // background-color: blue;
+    // box-sizing: border-box;
+    // border: 1px solid gray;
+    // margin: 0 auto;
+    // justify-content: space-evenly;
+
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  ._arrowicon {
+    margin-top: 3px;
+    height: 80%;
+    width: 22px;
+    background-image: url("../images/blue-arrow.svg");
+  }
+
+  ._return_arrow {
+    transform: rotate(180deg);
+    margin-top: 3px;
+    height: 80%;
+    width: 22px;
+    background-image: url("../images/blue-arrow.svg");
+  }
+
+  ._trip {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 17px;
+    margin-left: 20px;
+  }
+
+  ._stops {
+    color: blue;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+
+    margin-left: 20px;
+  }
+
+  ._dates {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+
+  ._passenger {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+
+  ._icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 30px !important;
+    margin: 0 0 0 auto;
+    margin-top: -10px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: url("../images/info-blue.svg") no-repeat;
+    background-size: 1.4rem;
+    background-position: 50%;
+    cursor: pointer;
+  }
+
+  ._icon:hover {
+    background-color: rgb(238, 238, 238);
+  }
+
+  ._price {
+    color: blue;
+    margin: 0 0 0 auto;
+    // margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px; // div height
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  ._small-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 30px !important;
+    margin-left: 20px !important;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: url("../images/info-blue.svg") no-repeat;
+    background-size: 0.9rem;
+    background-position: 50%;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  ._small-icon:hover {
+    background-color: rgba(128, 128, 128, 0.062);
+  }
+
+  ._delete-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 30px !important;
+    margin-left: -10px !important;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: url("../images/trash.svg") no-repeat;
+    background-size: 0.9rem;
+    background-position: 50%;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  ._delete-icon:hover {
+    background-color: rgba(128, 128, 128, 0.062);
+  }
+}
+
+.contact-fieldset {
+  border: none;
+  margin-top: 20px;
+  width: 50%;
+
+  // background-color: lightgreen;
+  display: flex;
+  padding-left: 0px;
+
+  input {
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 3px;
+    margin: 0px 50px 10px 0px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0pt 0.5pt blue;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.customer-info-group {
+  width: 50%;
+  height: auto;
+  padding-left: 25px;
+  margin-bottom: 30px;
+
+  ._passenger {
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}
+
+.customer-info-group-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer-info-container-disabled {
+  width: 85%;
+  margin: 0 auto;
+  height: auto; // auto
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 22px 34px 0 rgba(0, 16, 34, 0.1);
+  cursor: pointer;
+
+  .customer-info-header {
+    border-bottom: none;
+  }
+  .customer-info-form-header {
+    display: none;
+  }
+
+  .customer-info-group-container {
+    display: none;
+  }
+}
+
+.customer-info-container-review {
+  width: 85%;
+  margin: 0 auto;
+  height: auto; // auto
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 22px 34px 0 rgba(0, 16, 34, 0.1);
+  cursor: pointer;
+
+  .customer-info-form-header {
+    display: none;
+  }
+
+  .customer-info-group-container {
+    display: none;
+  }
+}
+
+.input-heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: lightgray;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.columns {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.submit-button {
+  display: block;
+  width: 95%;
+  height: 45px;
+  border: none;
+  background-color: #9fa9ba;
+  color: white;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.submit-button-active {
+  display: block;
+  width: 95%;
+  height: 45px;
+  border: none;
+  background-color: blue;
+  color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.customer-info-form-header {
+  width: 95%;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: -20px !important;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  ._header {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .info-page-wrapper {
+    width: 90%;
+  }
+
+  .customer-info-container-disabled {
+    width: 90%;
+  }
+}

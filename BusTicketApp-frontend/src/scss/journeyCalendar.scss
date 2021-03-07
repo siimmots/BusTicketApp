@@ -1,0 +1,185 @@
+.journey-calendar-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.journey-calendar-previous {
+  // button
+  display: none;
+
+  .journey-calendar-date {
+    max-width: 150px !important;
+  }
+}
+
+.journey-calendar-previous-active {
+  height: 50%;
+  min-width: 60px;
+  // margin: 0 auto;
+  margin: 0 32px;
+  margin-top: 19px;
+  margin-bottom: auto;
+  background-color: #cff9fc;
+  border-radius: 3px;
+  transform: rotate(180deg);
+  cursor: pointer;
+
+  .journey-calendar-date {
+    max-width: 135px !important;
+  }
+}
+
+.journey-calendar-date {
+  // date-box
+  height: 100%;
+  max-width: auto;
+  width: 100%;
+  // background-color: salmon;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 74.5px;
+  // box-sizing: border-box;
+  // border: 1px solid black;
+  font-weight: 100;
+  color: #9fa9ba;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  line-break: strict;
+  line-height: 20px;
+  padding-top: 27px;
+  flex: 1 1;
+}
+
+.journey-calendar-date-wide {
+  // date-box
+  height: 100%;
+  max-width: auto;
+  width: 100%;
+  // background-color: salmon;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 74.5px;
+  // box-sizing: border-box;
+  // border: 1px solid black;
+  font-weight: 100;
+  color: #9fa9ba;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.journey-calendar-next {
+  // button
+  height: 50%;
+
+  min-width: 60px;
+  // margin: 0 auto;
+  margin: 0 32px;
+
+  // vertical-align: middle;
+  // line-height: 50px;
+  // text-align: center;
+  margin-top: 19px;
+  margin-bottom: auto;
+  border-radius: 3px;
+  background-color: #cff9fc;
+  cursor: pointer;
+}
+
+.journey-calendar-icon {
+  background: url("../images/blue-chevron.svg");
+  background-position: 50% 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.tomorrow-date-banner {
+  max-width: 60%;
+  min-width: 100px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: auto;
+  margin: 0 auto;
+  z-index: 1;
+  background-color: white;
+  margin-top: -40px;
+  margin-bottom: 12px;
+  
+
+  div {
+    z-index: 5;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 5px;
+    color: blue;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    line-height: 15px;
+  }
+}
+
+.date-banner {
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  // padding: 6px 12px 6px 12px;
+
+  border-radius: 5px;
+  width: auto;
+  max-width: 50%;
+  min-width: 70px;
+  margin: 0 auto;
+  // height: 27px;
+  z-index: 1;
+  background-color: white;
+  // position: absolute;
+  margin-top: -15px;
+  margin-bottom: -12px;
+}
+
+.date-banner div {
+  z-index: 5;
+
+  text-transform: uppercase;
+  padding: 5px 5px 5px 5px;
+  color: blue;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+
+  line-height: 15px;
+}
+
+.disabled-day {
+  opacity: 0.3;
+  cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+  .journey-calendar-date-wide {
+    line-break: strict;
+    line-height: 20px;
+    padding-top: 27px;
+    flex: 1 1;
+  }
+
+  .tomorrow-date-banner {
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 10px;
+  }
+
+  .date-banner {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -42px !important;
+  }
+}

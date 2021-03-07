@@ -1,0 +1,124 @@
+/** Used to define container behavior: width, position: fixed etc... **/
+.Toastify__toast-container * {
+  padding-top: -25px;
+}
+
+.Toastify__toast-container > * {
+  border-radius: 5px;
+}
+
+/** Used to define the position of the ToastContainer **/
+.Toastify__toast-container--top-left {
+}
+.Toastify__toast-container--top-center {
+  color: yellow;
+  border-radius: 10px;
+}
+.Toastify__toast-container--top-right {
+}
+.Toastify__toast-container--bottom-left {
+}
+.Toastify__toast-container--bottom-center {
+}
+.Toastify__toast-container--bottom-right {
+}
+
+.Toastify__toast Toastify__toast--default toast-container {
+}
+
+/** Classes for the displayed toast **/
+.Toastify__toast {
+  border-radius: 10px;
+}
+.Toastify__toast--rtl {
+}
+.Toastify__toast--dark {
+}
+.Toastify__toast--default {
+  color: none;
+  // background-color: blue !important;
+  padding: 0px !important;
+  min-height: auto !important;
+  border-radius: 0px 4px 4px 0px !important;
+  // width: 500px;
+}
+.Toastify__toast--info {
+}
+.Toastify__toast--success {
+}
+.Toastify__toast--warning {
+}
+.Toastify__toast--error {
+}
+
+.Toastify__toast--default toast-container {
+  color: greenyellow;
+}
+
+/** Classes for the close button. Better use your own closeButton **/
+.Toastify__close-button {
+  display: none;
+}
+.Toastify__close-button--default {
+}
+.Toastify__close-button > svg {
+}
+.Toastify__close-button:hover,
+.Toastify__close-button:focus {
+}
+.Toastify__toast-body {
+  // tekst container
+  // background-color: red;
+  font-family: "Lato", sans-serif;
+  // padding-left: 170px;
+  width: 100%;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.info-container {
+  max-width: 500px;
+  height: 60px;
+  // background-color: wheat;
+  margin: 0 auto;
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.info-icon {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  float: left;
+  background-image: url("../images/info.svg");
+  background-position: center;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  // margin: 0 auto;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.info-heading {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px; // div height
+  // display: inline-block;
+}
+
+.alert-icon {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  float: left;
+  background-image: url("../images/info.svg");
+  // background-image: url("i");
+  background-position: center;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 4px 0px 0px 4px;
+}

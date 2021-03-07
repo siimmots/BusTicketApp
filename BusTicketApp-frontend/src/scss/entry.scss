@@ -1,0 +1,332 @@
+@import "normalize.css";
+@import "header.scss";
+
+// searchbar
+@import "dropdown.scss";
+@import "autosuggest.scss";
+@import "calendar.scss";
+@import "toast.scss";
+
+// journey section
+@import "journey.scss";
+@import "journeyCalendar.scss";
+@import "journeyResults.scss";
+
+// add-information section
+@import "customerInfo.scss";
+
+// review and confrim section
+@import "reviewPage.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  // 320px is the smallest mobile device, so we don't have to support smaller screens than that.
+  min-width: 320px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  background: url(../images/background.png) no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 60%;
+  background-color: #fafbfc;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  color: #14112d;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid blue; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-container {
+  width: 100%;
+  height: 900px;
+
+  position: relative;
+  padding-top: 100px;
+}
+
+.hero-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  width: 100%;
+  height: 80%;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.search-container {
+  width: 100%; // SECTION
+  // width: auto;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.hero-searchbar {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.searchbar {
+  width: 100%;
+  height: 60%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+  box-shadow: 0 22px 34px 0 rgba(0, 16, 34, 0.1);
+  -webkit-box-shadow: 0 22px 34px 0 rgba(0, 16, 34, 0.1);
+}
+
+.tablet-search-section {
+  display: none;
+}
+
+.passengers-section {
+  height: 20px;
+}
+.section {
+  width: 100%;
+  // max-width: 210px; SECTION
+  height: 100%;
+  padding-top: 10px;
+  background-color: white;
+  border-right: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+.section-input {
+  border: none;
+  background-color: inherit;
+  margin-top: 35px;
+  width: 90%;
+  font-size: 18px;
+  padding-left: 20px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+}
+
+.section-input-active {
+  color: #4b01ff;
+  padding-top: 12px;
+  font-weight: 600;
+}
+
+.date-container-heading {
+  font-weight: 200;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.left-section {
+  width: 95%; // SECTION
+  //width: 100%;
+  height: 100%;
+  // margin: 0 auto;
+  background-color: white;
+  // max-width: 210px; SECTION
+  border-radius: 1px 0 0 1px;
+  cursor: pointer;
+}
+
+.search-section {
+  width: 100%;
+  height: 100%;
+  color: #4b01ff;
+}
+
+.search-button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid lightgrey;
+  background-color: #4b01ff;
+
+  color: white;
+  border: none;
+  font-size: large;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-button:hover {
+  background-color: #a87ff9;
+
+  cursor: pointer;
+}
+
+.calender {
+  margin-left: 20%;
+}
+
+.popup-container {
+  width: inherit;
+  height: auto;
+}
+
+.origin-input {
+  margin-top: 43px;
+  max-width: 140px;
+  width: 100%;
+  height: 100px;
+  margin-left: 25px;
+  color: #4b01ff;
+
+  border-radius: 10px 0 0 10px;
+}
+
+.destination-input {
+  margin-top: 33px;
+  color: #4b01ff;
+  height: 33px;
+  max-width: 200px;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.destination-section {
+  width: 95%;
+  // max-width: 210px; SECTION
+  height: 100%;
+  padding-top: 10px;
+  background-color: white;
+  border-right: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+.depart-date-section {
+  margin-top: 35px;
+  margin-left: 15px;
+  // max-width: 210px; SECTION
+  font-family: "Lato", sans-serif;
+}
+
+.return-date-section {
+  margin-top: 35px;
+  margin-left: 15px;
+  // max-width: 210px; SECTION
+}
+
+.calender {
+  width: 60px;
+  margin-left: 0px;
+}
+
+.switch-origin-destination {
+  z-index: 100;
+
+  -moz-border-radius: 50px/50px;
+  -webkit-border-radius: 50px 50px;
+  border-radius: 50px/50px;
+  border: solid 1px lightgray;
+
+  width: 30px;
+  height: 30px;
+  margin-left: -14px;
+
+  background: url("../images/arrows.svg") no-repeat;
+  background-position: 50% 50%;
+
+  cursor: pointer;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 0px;
+  margin-right: 0px;
+}
+
+.rectangle {
+  width: 1px;
+  height: 40px;
+  background-color: lightgray;
+}
+
+.suggestion::before {
+  background-color: greenyellow;
+}
+
+@keyframes antisub {
+  // reverse subheading animation
+  0% {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -20px;
+    font-size: x-small;
+  }
+  100% {
+    opacity: 0;
+    font-size: medium;
+    margin-top: 10px;
+  }
+}
+.antisubheading {
+  visibility: hidden;
+  animation: antisub 0.25s;
+}
+
+@media screen and (max-width: 1200px) {
+  // button
+  .search-section {
+    display: none;
+  }
+
+  .tablet-search-section {
+    display: block;
+    width: 200px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .search-button {
+    border-radius: 5px;
+  }
+
+  .left-section-false {
+    max-width: 223px;
+  }
+
+  .destination-section-false {
+    max-width: 224px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .hero-searchbar {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+// @media screen and (max-width: 1500px) { SECTION
+//   .search-container {
+//     width: 90%;
+//   }
+// }
