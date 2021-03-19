@@ -23,7 +23,7 @@ I created this project at my internship at Optimist Digital
 
 ![picture](Images/AddInfo3Passengers.png)
 
-![picture](Images/AddInformationPopup.png)
+![picture](Images/AddInformationPopUp.png)
 
 ![picture](Images/ReviewAndConfirm2.png)
 
