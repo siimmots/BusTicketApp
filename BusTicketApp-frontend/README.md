@@ -1,7 +1,10 @@
 ## Scripts
 
-In the project directory, you can run:
 
+To install the dependencies:
+### `npm install`
+
+To run the application:
 ### `npm start`
 
 Runs the app in the development mode.\
